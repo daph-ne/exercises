@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../assets/css/park.css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <title>
+      Garden
+    </title>
+  </head>
+  <body>
+    <img src="../assets/images/grass-long.png" id="grass" alt="grass">
+    <img src="../assets/images/tree.png" id="tree" alt="tree">
+    <br>
+    <h1> 
+      <i>Garden</i> 
+    </h1>
+    <p>
+      While there are many plants growing in the wild,<br>
+       people also cultivate and grow certain plants, <br>
+       bushes and shrubs in their homes or yards.
+      <br>
+       This activity is known as gardening.<br>
+        While it may appear as a hobby to some, <br>
+        the fact is that gardening is actually quite beneficial and,<br>
+         therefore, important to us.
+    </p>
+    <p>
+      Gardening is a fairly physical activity. <br>
+      It involves weeding, watering of plants, mulching, <br>
+      trellising and harvesting – all of which require<br>
+       physical labour from the gardener. 
+      <br> Hence, it becomes an excellent addition<br>
+       to your exercise routine.
+    </p>
+    <form onsubmit="submitAction()">
+    <input type="radio" id="1" name="rating" value="1">
+    <label for="1"> 1 </label>
+    <input type="radio" id="2" name="rating" value="2">
+    <label for="2"> 2 </label>
+    <input type="radio" id="3" name="rating" value="3">
+    <label for="3"> 3 </label>
+    <input type="radio" id="4" name="rating" value="4">
+    <label for="4"> 4 </label>
+    <input type="radio" id="5" name="rating" value="5" checked="checked">
+    <label for="5"> 5 </label>
+    <input type="submit" value="submit">
+    </form>
+    <p>
+    <a href="https://duckduckgo.com/?q=garden&t=ffnt&iar=images&iax=images&ia=images" target="_blank" id="garden"> More Gardens...
+    </a>
+    </p>
+  </body>
+  <script> 
+    function submitAction() {
+      alert('Thank you!');
+    }
+  </script>
+</html>
