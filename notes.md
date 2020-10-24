@@ -1,50 +1,77 @@
-1 + NaN //NaN
+## Syntax
 
+##### Declaring variables:
+```javascript
 let someName = value;
+const someName = value; //value can't be changed
+```
 
+##### Datatypes:
+`boolean`: true/false
+`typeof`: Find datatype
+
+##### Escape characters:
+`\n` newline
+`\'` single quote
+`\"` double quote
+`\\` backslash
+
+##### Common results:
+`1 + NaN //NaN`
+
+##### Assignment:
+```javascript 
 let score = 10;
 score = score + 1 (or) score += 1
+```
 
-const someName = value; //value can't be changed
+##### String operations:
+Length: `"any string".length`
+Uppercase: `varname.toUpperCase() //Every letter in that variabe name becomes capital`
+Lowercase: `varname.toLowerCase() //Every letter in that variable name becomes small`
 
-true
-false
-
-"word".length
-
-varname.toUpperCase() //Every letter in that variabe name becomes capital
-varname.toLowerCase() //Every letter in that variable name becomes small
-
+```javascript
 let color = "   purple     "
 color.trim() //removes spaces 
-color.trim().toUpperCase
+color.trim().toUpperCase //Can chain commands
+```
 
+IndexOf:
+```javascript
 "baseball".indexOf("ball") //'4' because b is the 4th alphabet
 "baseball".indexOf("entertainment") // '-1' if not found
+```
 
+Slice:
+```javascript
 "baseball".slice(4) //"ball"
-"baseball".slice(1,2) //startig number and ending number
+"baseball".slice(1,2) //starting number and ending number
 
 'baseball is good'.replace('good','ok')//baseball is ok
+```
 
-\n newline
-\' single quote
-\" double quote
-\\ backslash
+Templating:
+```javascript
+\`I counted ${3 + 4} sheep\`; // I counted 7 sheep
+```
 
-`I counted ${3 + 4} sheep`; // I counted 7 sheep
+##### Numbers
 
-Math.PI 
+Math:
+```javascript
+Math.PI
 Math.floor
 Math.round
 Math.pow
 Math.random()
 
-typeof
-
 parseInt //Whole number
 parseFloat //Any number
+```
 
+
+##### Operators
+```javascript
 > //greater than
 < // less than
 >= //greater than or equal to
@@ -55,7 +82,7 @@ parseFloat //Any number
 !== //strict non equality
 
 # < $ //true
-
+```
 
 
 
