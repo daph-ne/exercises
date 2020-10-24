@@ -7,13 +7,13 @@ const someName = value; //value can't be changed
 ```
 
 ##### Datatypes:
-`boolean`: true/false
+`boolean`: true/false  
 `typeof`: Find datatype
 
 ##### Escape characters:
-`\n` newline
-`\'` single quote
-`\"` double quote
+`\n` newline  
+`\'` single quote  
+`\"` double quote  
 `\\` backslash
 
 ##### Common results:
@@ -26,9 +26,9 @@ score = score + 1 (or) score += 1
 ```
 
 ##### String operations:
-Length: `"any string".length`
-Uppercase: `varname.toUpperCase() //Every letter in that variabe name becomes capital`
-Lowercase: `varname.toLowerCase() //Every letter in that variable name becomes small`
+Length: `"any string".length`  
+Uppercase: `varname.toUpperCase() //Every letter in that variabe name becomes capital`  
+Lowercase: `varname.toLowerCase() //Every letter in that variable name becomes small`  
 
 ```javascript
 let color = "   purple     "
