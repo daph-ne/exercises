@@ -80,8 +80,21 @@ parseFloat //Any number
 != //not equal
 === //strict equality
 !== //strict non equality
-
 # < $ //true
+```
+```
+push //add to end
+pop //removes from end 
+unshift //adds to start 
+shift // removes from start
+concat //merge arrays
+includes //looks for values
+indexOf //just like str.indexOf
+join //creates a string from arrays
+reverse //reverses an array
+slice //copy portion of an array
+splice //remove/replace elements
+sort //sorts an array
 ```
 
 
