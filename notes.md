@@ -94,6 +94,7 @@ join //creates a string from arrays
 reverse //reverses an array
 slice //copy portion of an array
 splice //remove/replace elements
+      //splice(startIndex, deletecount, itemsToInsert)
 sort //sorts an array
 ```
 
