@@ -97,7 +97,68 @@ splice //remove/replace elements
       //splice(startIndex, deletecount, itemsToInsert)
 sort //sorts an array
 ```
+#### Object
+```javascript
+let obj = {
+    num = 1;
+}
+obj.letter = "abcd" //Object { num: 1, letter: "abcd" }
+obj['my name'] = "Daphne" //adds space between key name
+```
 
-
-
-
+#### Loops
+```
+for loop:
+for (
+      [initialExpression];
+      [condition];
+      [incrementExpression];
+)
+```
+```
+for loops + array:
+const word = 'stressed';
+for (let i = word.length-1; i>=0; i--){
+      console.log(word[i]); 
+}
+output: d
+        e
+        s 2
+        e
+        r
+        t
+        s
+```
+```
+const word = 'stressed';
+let reversedWord = '';
+for (let i = word.length-1; i>=0; i--) {
+      reversedWord += word[i];
+      console.log(reversedWord); 
+}
+output: d 
+        de 
+        des 
+        dess 
+        desse 
+        desser 
+        dessert 
+        desserts
+```
+```
+nested for loops:
+for (let i= 1; i <=2; i++) {
+      console.log('Outer Loop:', i)
+      for (let j = 4; j >=0; j-=2) {
+            console.log('     Inner loop:', j)
+      }…
+Output:
+Outer Loop: 1 
+     Inner loop: 4 
+     Inner loop: 2 
+     Inner loop: 0 
+Outer Loop: 2 
+     Inner loop: 4 
+     Inner loop: 2 
+     Inner loop: 0
+```
