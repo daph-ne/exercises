@@ -118,16 +118,23 @@ for (
 ```
 for loops + array:
 const word = 'stressed';
-for (let i = word.length-1; i>=0; i--){
+for (let i = 0; i = word.length-1; i++){
       console.log(word[i]); 
 }
-output: d
-        e
-        s 2
-        e
-        r
-        t
-        s
+
+for (let letter of word){
+      console.log(letter); 
+}
+
+output: 
+s
+t
+r
+e
+s 2
+e
+d
+        
 ```
 ```
 const word = 'stressed';
@@ -162,3 +169,19 @@ Outer Loop: 2
      Inner loop: 2 
      Inner loop: 0
 ```
+```
+while loop:
+while(condition) {
+
+}
+```
+```
+for..of:
+for(variable of iterable) {
+      statement
+}
+```
+```
+for..of with objects:
+object.keys()
+
