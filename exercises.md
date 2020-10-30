@@ -9,7 +9,6 @@ For the following exercises, `let arr = [123, 1, 2, 64, 73, 823, 624, 31, 58, 25
 |5|Print the largest number|`arr`|||
 |6|Print the second largest number|`arr`|||
 |7|Print the second smallest number|`arr`|||
-|8|Count and print the number of even numbers|`arr`|||
-|8|Print one letter from each String: <br> First char from `str1`, first char from `str2`, second from `str1` and then `str2` and so on|`str1 = 'iatera.mse!eaa', str2 = '-mharyatrhhh'`|||
-
-
+|8|Print all even numbers|`arr`|||
+|9|Count and print the number of even numbers|`arr`|||
+|10|Print one letter from each String: <br> First char from `str1`, first char from `str2`, second from `str1` and then `str2` and so on|`str1 = 'iatera.mse!eaa', str2 = '-mharyatrhhh'`|||
