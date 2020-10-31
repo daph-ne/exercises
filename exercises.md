@@ -33,6 +33,7 @@ let arr2 = [93, 23, 1 , -1, 85, 39, 62];
 -----
 #### Solutions:
 
+```
 arr = [123, 1, 2, 64, 73, 823, 624, 31, 58, 253, 626, 32, 41, 310];
 str1 = 'iatera.mse!eaa';
 str2 = '-mharyatrhhh';
@@ -165,4 +166,4 @@ function printAltString(str1, str2) {
   }
 console.log(result)
 }
-
+```
