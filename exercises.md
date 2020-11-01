@@ -167,3 +167,46 @@ function printAltString(str1, str2) {
 console.log(result)
 }
 ```
+```javascript
+For the following exercises,
+let arr1 = [123, 58, 626, 1, 2, 64, 2, 73, 823, 624, 31, 58, 253, 626, 32, 41, 310, 58, 153];
+let arr2 = [93, 23, 1 , -1, 85, 39, 62];
+
+//printSumOfArr(arr2);
+//printOddNumbers(arr1);
+//printAppendedArray(arr1, arr2);
+printFrequency(arr1);
+
+function printSumOfArr(arr2) {
+  console.log(`Problem 12 - printSumOfArr2`)
+  sum = 0;
+  for(let num of arr2) {
+    sum += num;
+  }
+	console.log(sum)
+}
+
+function printOddNumbers(arr1) {
+  console.log(`Problem 13 - printOddNumbers`)
+  let result = "";
+  for(let num of arr1) {
+    if(num%2 === 1) {
+      result += num + ", ";
+    }
+  }
+  console.log(`let array = [${result}]`)
+}
+
+function printAppendedArray(arr1, arr2) {
+  console.log(`Problem 14 - printAppendedArray`)
+  console.log(`let array = [${arr1},${arr2}]`)
+}
+
+function printFrequency(arr1) {
+  console.log(`Problem 15 - printFrequency`)
+	let count = {};
+  for(let num of arr1) {
+    count[num] = count[num] ? count[num] + 1 : 1;
+  }
+  console.log(count)
+}
