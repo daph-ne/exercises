@@ -60,8 +60,8 @@ Templating:
 Math:
 ```javascript
 Math.PI
-Math.floor
-Math.round
+Math.floor //integer less than or equal to the given number
+Math.round //floating number between 0 and 1
 Math.pow
 Math.random()
 
@@ -142,8 +142,17 @@ let reversedWord = '';
 for (let i = word.length-1; i>=0; i--) {
       reversedWord += word[i];
 }
-console.log(`reversedWord of ${word} is ${reversedWord}`); 
-output: d 
+console.log(`Reversed word of ${word} is ${reversedWord}.`); 
+output: Reversed word of stressed is desserts.
+       
+const word = 'stressed';
+let reversedWord = '';
+for (let i = word.length-1; i>=0; i--) {
+      reversedWord += word[i];
+      console.log(reversedWord);
+}
+Output:
+        d 
         de 
         des 
         dess 
@@ -185,3 +194,267 @@ for(variable of iterable) {
 for..of with objects:
 object.keys()
 ```
+
+#### Functions
+```javascript
+function fruits() {
+    console.log('apple');
+    console.log('mango');
+    console.log('grape');
+} //code doesn't run
+fruits() //code runs
+
+function rollDie() {
+	let roll = Math.floor(Math.random() * 6) + 1;
+	console.log(`Rolled: ${roll}`);
+}
+rollDie()
+```
+#### Function Challenges
+```javascript
+Problem 1: 
+Write a isValidPassword function
+It accepts 2 arguments password and username
+Password must:
+      be atleast 8 characters
+      cannot contain spaces
+      cannot contain the username
+if all requirements are met, return true
+otherwise false.
+
+function isValidPassword(username, password) {
+    if(password.length < 8) {
+        return false;
+    }
+    if(password.indexOf(' ') !== -1) { //-1 if space found
+        return false;
+    }
+    if(password.indexOf(username) !== -1) {
+        return false;
+    }
+    return true;
+}
+
+function isValidPassword(username,password) {
+      if(
+            password.length < 8 ||
+            password.indexOf(' ') !== -1 ||
+            password.indexOf(username) !== -1
+      ) 
+         {
+        return false;
+    }
+    return true;
+}
+```
+```javascript
+Problem 2:
+Write a function to find the averaage value in an array of numbers
+
+function avgValue(arr) {
+	let result = 0;
+      //loop for each num
+	for(let num of arr) {
+            //add them together
+		result = result + num;
+	}
+      //divide them by number of nums
+	console.log(result/arr.length);
+}
+```
+```javascript
+Problem 3:
+Pangram
+
+function isPangram(sentence) {
+	for(let char of 'abcdefghijklmnopqrstuvwxyz') {
+		if(sentence.indexOf(char) === -1) {
+			return false;
+		}
+	}
+	return true;
+}
+```
+```javascript
+Problem 4:
+Cards
+getCard() function 
+returns a random playing card object like
+      {
+      value: 'K'
+      suit: 'clubs'
+      }
+pick a random value from:
+ -------1, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A
+pick a random suit from
+ clubs, spades, hearts, diamonds
+return both in an object
+
+function getCard() {
+	const values = [1,2,3,4,5,6,7,8,9,10,'J','Q','K','A'];
+	const cardValue = Math.floor(Math.random() * values.length); //gives i
+	const value = values[cardValue]; //values[i]
+
+	var suits = ['clubs','hearts','spades','diamond'];
+	const cardSuit = Math.floor(Math.random() * suits.length);
+	const suit = suits[cardSuit];
+	
+	console.log(value, suit)
+}
+
+function getCard() {
+	const values = [2,3,4,5,6,7,8,9,10,'J','Q','K','A'];
+	const suits = ['clubs','hearts','spades','diamond'];
+	return {value: pick[values], suit: pick[suits]}
+}
+```
+#### Functions as arguments
+```javascript
+function cry() {
+      console.log("I am sad");
+}
+
+function rage() {
+      console.log("I hate everything");
+}
+
+function repeatNTimes(action, num) {
+      for(let i = 0; i < num; i++) {
+            action();
+      }
+}
+repeatNTimes(rage, 13) //repeats the rage function 13 times
+
+function pickOne(f1,f2) {
+      let rand = Math.random();
+      console.log(rand);
+      if(rand < 0.5) {
+            f1() 
+      }
+      else
+      {
+            f2()
+      }
+}
+pickOne(cry, rage) 
+```
+#### Functions as return values
+```javascript
+function multiplyBy(num) {
+      return function() { //returning a function
+            console.log("HI..!!")
+      }
+}
+
+var mystery = multiplyBy() //undefined-stores the value of multiply
+mystery //contains a function
+mystery() //HI..!!
+
+//also written as
+function multiplyBy(num) {
+  const f = function() {
+    console.log("Blah");
+  }
+      return f;
+}
+
+var mysteryy = multiplyBy()
+mysteryy() //Blah
+
+//to return at the same time
+function multiplyBy(num) {
+  return function() {
+    console.log("Blah");
+  }
+}
+
+var mysteryy = multiplyBy()
+mysteryy() //Blah
+
+//returning function
+function multiplyBy(num) {
+      return function(x) {
+            return x * num;
+      }
+}
+ const triple = multiplyBy(3); 
+ triple(6) //18
+
+
+ //between two numbers 
+ function betweenNumbers(x,y) {
+  return function(num) {
+    if(num >= x && num <= y) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+const isChild = betweenNumbers(0, 18)
+isChild(12) //true
+isChild(22) //false
+```
+#### Callbacks
+```javascript
+//setting time for alert
+setTimeOut(function()) {
+      alert("WELCOME..!!")
+}, 5000);
+
+//button
+const btn = document.querySelector('button');
+btn.addEventListener(click, functionName) //function will be called when the button is clicked
+
+//function itself can be added
+const btn = document.querySelector('button');
+btn.addEventListener(click, function() {
+      alert("Why did you click me...??")
+)}
+```
+#### Array and functions
+```javascript
+FOR_EACH:
+
+const numbers = [21, 22, 23, 24, 25]
+
+numbers.forEach(function(num) {
+  console.log(num)
+})
+//21
+//22
+//23
+//24
+//25
+```
+```javascript
+function printTriple(n) {
+  console.log(n * 3);
+}
+
+numbers.forEach(printTriple) 
+//63 
+//66 
+//69 
+//72 
+//75
+```
+```javascript
+MAP:
+//creates new array from existing array
+var number = [21, 22, 23, 24, 25]
+var words = ['hi', 'bye', 'good', 'bad']
+
+var double = number.map(function(num) { //num represents each element in number
+  return  num * 2; //if num * 2 is given without return, it gives undefined as output
+});
+
+var numDetail = number.map(function(n) {
+  return {
+    value: n,
+    isEven: n % 2 === 0
+  }
+})
+numDetail
+
