@@ -66,18 +66,25 @@ Math.pow
 Math.random()
 
 parseInt //Whole number
+function convertToInteger(str) {
+ return parseInt(str);
+}
+convertToInteger("56");
+
+
 parseFloat //Any number
 ```
 
 
 ##### Operators
 ```javascript
+comparison operators
 > //greater than
 < // less than
 >= //greater than or equal to
 <= //less than or equal to
 == //equality
-!= //not equal
+!= //not equal 
 === //strict equality
 !== //strict non equality
 # < $ //true
@@ -104,6 +111,8 @@ let obj = {
 }
 obj.letter = "abcd" //Object { num: 1, letter: "abcd" }
 obj['my name'] = "Daphne" //adds space between key name
+
+object.prototype.hasOwnProperty() //returns a boolean indicating whether the object has the specified property as its own property
 ```
 
 #### Loops
@@ -194,6 +203,13 @@ for(variable of iterable) {
 for..of with objects:
 object.keys()
 ```
+```
+ternary operator
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
 
 #### Functions
 ```javascript
@@ -413,6 +429,48 @@ btn.addEventListener(click, function() {
       alert("Why did you click me...??")
 )}
 ```
+#### Recursion
+```javascript
+function factorial(n)
+{
+      //base case
+      if(n == 1 || n == 0)
+            return 1;
+      //recursive case
+      else
+            return n * factorial(n-1);
+}
+console.log(factorial(4)) //24
+//how?
+factorial(4)
+      4 * factorial(3) //24
+            3 * factorial(2) //6
+                  2 * factorial(1) //2
+                        //multiplied in reverse
+```
+```javascript
+  function multiply(arr, n) {
+    if (n <= 0) { //base case
+      return 1;
+    } else { //recursiv case
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+  }
+```
+```javascript
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5)); // [ 1, 2, 3, 4, 5 ]
+
+
+
 #### Array and functions
 ```javascript
 FOR_EACH:
@@ -449,12 +507,3 @@ var words = ['hi', 'bye', 'good', 'bad']
 var double = number.map(function(num) { //num represents each element in number
   return  num * 2; //if num * 2 is given without return, it gives undefined as output
 });
-
-var numDetail = number.map(function(n) {
-  return {
-    value: n,
-    isEven: n % 2 === 0
-  }
-})
-numDetail
-
