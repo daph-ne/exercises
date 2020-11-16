@@ -2,6 +2,7 @@ QUESTIONS:
 1.  Write a JavaScript program to display the current day and time.
 2. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
 3. Binary search
+4. Leap year
 
 1.  Write a JavaScript program to display the current day and time.
 ```javascript
@@ -65,5 +66,13 @@ function binarySearch(arr, num) {
   return (arr[middleIndex] = num) ? middleIndex : "Not found"
 }
 binarySearch([1, 3, 6, 9, 12, 15, 18, 19, 28, 35, 48, 59, 60], 18);
+```
+
+4. Leap year
+```javascript
+function leapYear(year) {
+  return (year % 4 === 0) ? "Leap year" : "Not leap year";
+}
+leapYear(2000)
 ```
 
