@@ -1,7 +1,7 @@
 QUESTIONS:
 1.  Write a JavaScript program to display the current day and time.
 2. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
-3. Rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.
+3. Binary search
 
 1.  Write a JavaScript program to display the current day and time.
 ```javascript
@@ -48,4 +48,22 @@ function areaOfTriangle(x, y, z){
 areaOfTriangle(5, 6, 7);
 ```
 
-3. Rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.
+3. Binary search
+```javascript
+function binarySearch(arr, num) {
+  var firstIndex = 0, 
+      lastIndex = arr.length - 1,
+      middleIndex = Math.floor((firstIndex + lastIndex) / 2);
+  while(arr[middleIndex] != num && firstIndex < lastIndex) {
+    if(num < arr[middleIndex]) {
+      lastIndex = middleIndex - 1;
+    } else if(num > arr[middleIndex]) {
+      firstIndex = middleIndex + 1;
+    }
+    middleIndex = Math.floor((firstIndex + lastIndex) / 2);
+  } 
+  return (arr[middleIndex] = num) ? middleIndex : "Not found"
+}
+binarySearch([1, 3, 6, 9, 12, 15, 18, 19, 28, 35, 48, 59, 60], 18);
+```
+
