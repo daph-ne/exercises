@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-    </head>
-    <body>
-        <label for="selected">Choose one:</label>
-        <select name="selected" id="selected">
-          <option value="checkPalindromeNum" id = "checkpalindrome">Palindrome</option>
-          <option value="changeToCelsiusTemp" id = "changeToCelsius">Change To Celsius</option>
-          <option value="changeToFahrenheitTemp" id = "changeToFahrenheit">Change To Fahrenheit</option>
-        </select> 
-        <br><br> 
+  <head>
 
-        <form>
-            <input type="text" id="enterValue" name="enterValue">
-            <label for="enterValue"></label>
-            <br><br><br>
-            
-            <div  id="submit">
-              Submit
-            </div>
+  </head>
+  <body>
+    <label for="selected-program">Choose One: </label> 
+    <select name="selected-program" id="selected-program"> 
+      <option value="checkIfPalindrome">Palindrome</option>;
+      <option value="changeToCelsius">Change to celsius</option>;
+      <option value="changeToFahrenheit">Change to fahrenheit</option>;
+    </select>
+    <br><br>
 
-            <br><br><br>
+    <form>
+      <input type="text" id="inputText" name="inputText">
+      <label for="inputText"></label>
+      <br><br><br>
 
-            <input type="text" id="outputValue" name="outputValue">
-            <label for="outputValue"></label>
-            
-        </form>
-        <script src="../Program/program.js"></script>
-    </body>
+      <div id="submit-button">
+        Submit
+      </div>
+      <br><br>
+
+      <input type="text" id="outputText" name="outputText">
+      <label for="outputText"></label>
+    </form>
+
+    <script src="../Program/program.js"></script>
+
+  </body>
 </html>

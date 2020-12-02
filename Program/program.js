@@ -1,25 +1,25 @@
-let submit = document.getElementById("submit");
-submit.addEventListener("click", runAnyOne);
+let submit = document.getElementById("submit-button");
+submit.addEventListener("click",runTheSelectedProgram);
 
-function runAnyOne() {
-    var selectedValue = document.getElementById("selected").value;
-    var inputValue = document.getElementById("enterValue");
-    var input = inputValue.value;
-    console.log(input)
-    var result;
+function runTheSelectedProgram(){
+    let selectedOption = document.getElementById("selected-program").value;
+    let inputText = document.getElementById("inputText");
+    let input = inputText.value;
+    let result;
 
-    if(selectedValue == "checkPalindromeNum"){
-        result = checkPalindrome(input);
-    } else if(selectedValue == "changeToCelsiusTemp"){
+    if(selectedOption == "checkIfPalindrome"){
+        result = Palindrome(input);
+    } else if(selectedOption == "changeToCelsius"){
         result = changeToCelsius(input);
-    } else if(selectedValue == "changeToFahrenheitTemp"){
+    } else if(selectedOption == "changeToFahrenheit"){
         result = changeToFahrenheit(input);
     }
-    var output = document.getElementById("outputValue");
-    output.value = result;
-} 
 
-function checkPalindrome(input) {
+    let output = document.getElementById("outputText");
+    output.value = result;
+}
+
+function Palindrome(input) {
     var reversedInput = "";
     for(i = input.length - 1; i >= 0; i--) {
         reversedInput += input[i];
