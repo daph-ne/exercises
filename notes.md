@@ -64,6 +64,7 @@ Math.floor //integer less than or equal to the given number
 Math.round //floating number between 0 and 1
 Math.pow
 Math.random()
+charAt() //returns the character at the specified index in a string.
 
 parseInt //Whole number
 function convertToInteger(str) {

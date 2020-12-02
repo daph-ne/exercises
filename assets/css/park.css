@@ -34,3 +34,15 @@ form {
      width: 1260px;
      text-align: center;
 }
+
+.background-colour {
+     background-color: white;
+}
+
+#third-paragraph {
+     color: red;
+}
+
+.yellow-text {
+     color: yellow;
+}

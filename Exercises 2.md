@@ -113,12 +113,12 @@ guessNumber();
 ```javascript
 function countDays(event, month, date) {
   var today = new Date();
-  var requiredDate = (today.getFullYear(), today.getMonth(), today.getDay());
+  var requiredDate = new Date(today.getFullYear(), today.getMonth(), today.getDay());
   if(today.getMonth() == month && today.getDay() > date) {
     requiredDate.setFullYear((today.getFullYear()) + 1);
   }
   var oneDay = 1000 * 60 * 60 * 24;
-  console.log(Math.floor(requiredDate.getTime - today.getTime) / oneDay) + " days left until " + event;
+  console.log(Math.floor(requiredDate.getTime() - today.getTime()) / oneDay) + " days left until " + event;
 }
 countDays("Christmas", "12", "25");
 ```
