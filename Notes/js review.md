@@ -48,3 +48,4 @@ Data types:
     => null - nothing (data type is object).
     => function - block of code to perform a paricular task.
     
+

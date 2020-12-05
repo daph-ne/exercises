@@ -19,6 +19,7 @@ let timeWhileBorrowing;
 let timeWhileBorrowingInSeconds;
 
 function borrowTimer() {
+    clock.style.color = "red";
     let currentTime = new Date();
     let hourAtBorrowTime = currentTime.getHours();
     let minuteAtBorrowTime = currentTime.getMinutes();
@@ -39,6 +40,7 @@ let timeWhileReturning;
 let timeWhileReturningInSeconds;
 
 function returnAction(){
+        clock.style.color = "black";
         borrow.disabled = false;
         returnBtn.disabled = true;
         let currentTime = new Date();
