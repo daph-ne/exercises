@@ -15,10 +15,10 @@ Problems:
 Leetcode Arrays
 | Problem | Link | Key steps for solution| 
 |----|----|----|
-| Max consecutive ones | https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3238/ |  |
-| Numbers with Even Number of Digits | https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3237/ |  |
-| Squares of a Sorted Array | https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3240/ |  |
-| Duplicate Zeros | https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3245/ | |
+| Max consecutive ones | https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3238/ | [1] Create variable currentMax = 0 and finalMax = 0<br>  [2] Run through the array <br>  [3] If num is 1, add it to currentMax <br>  [4] finalMax is the greater one (currentMax or finalMax) <br> [5] If num is not 1,currentMax becomes 0 again|
+| Numbers with Even Number of Digits | https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3237/ | [1] Create variable result = 0 <br> [2] Run through the array <br> [3] Convert each element of array into a separate string <br> [4] Add count to result if string length is even | 
+| Squares of a Sorted Array | https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3240/ | [1] Create new array <br> [2] Push squares of each element into new array <br> [3] Sort the new array |
+| Duplicate Zeros | https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3245/ | [1] Run through the array <br> [2] If element is zero,add another 0 beside it(splice) <br> [3] Pop last element|
 | Merge Sorted Array | https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3253/ | |
 | Remove Element | https://leetcode.com/explore/learn/card/fun-with-arrays/526/deleting-items-from-an-array/3247/ | |
 | Remove Duplicates from Sorted Array | https://leetcode.com/explore/learn/card/fun-with-arrays/526/deleting-items-from-an-array/3248/ | |
