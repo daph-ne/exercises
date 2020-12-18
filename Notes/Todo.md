@@ -19,8 +19,8 @@ Leetcode Arrays
 | Numbers with Even Number of Digits | https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3237/ | [1] Create variable result = 0 <br> [2] Run through the array <br> [3] Convert each element of array into a separate string <br> [4] Add count to result if string length is even | 
 | Squares of a Sorted Array | https://leetcode.com/explore/learn/card/fun-with-arrays/521/introduction/3240/ | [1] Create new array <br> [2] Push squares of each element into new array <br> [3] Sort the new array |
 | Duplicate Zeros | https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3245/ | [1] Run through the array <br> [2] If element is zero,add another 0 beside it(splice) <br> [3] Pop last element|
-| Merge Sorted Array | https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3253/ | |
-| Remove Element | https://leetcode.com/explore/learn/card/fun-with-arrays/526/deleting-items-from-an-array/3247/ | |
+| Merge Sorted Array | https://leetcode.com/explore/learn/card/fun-with-arrays/525/inserting-items-into-an-array/3253/ |[1] Create variables for length of each array <br> [2] Sort in reverse order |
+| Remove Element | https://leetcode.com/explore/learn/card/fun-with-arrays/526/deleting-items-from-an-array/3247/ |[1] Create stablePointer = 0 <br> [2] Run through the array <br> [3] When != val, move stable pointer to that position and add 1 to it <br> [4] Return stablePointer |
 | Remove Duplicates from Sorted Array | https://leetcode.com/explore/learn/card/fun-with-arrays/526/deleting-items-from-an-array/3248/ | |
 | Check If N and Its Double Exist | https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3250/ | |
 | Valid Mountain Array | https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3251/ | |
