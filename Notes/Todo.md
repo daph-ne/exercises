@@ -46,3 +46,6 @@ Leetcode Arrays
 | Kids With the Greatest Number of Candies | https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/ | |  
 | Day of the Week | https://leetcode.com/problems/day-of-the-week/ | |   
 | Best Time to Buy and Sell Stock II | https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/ | |
+| Find Peak Element | https://leetcode.com/problems/find-peak-element/ | [1] Find max <br> [2] Return indexOf[max]|
+| Minimum Size Subarray Sum | https://leetcode.com/problems/minimum-size-subarray-sum/ | [1] Iterate through the array <br> [2] Find length when s is reached <br> [3] Return min length |
+| Longest Substring Without Repeating Characters | https://leetcode.com/problems/longest-substring-without-repeating-characters/ | [1] Create a new set <br> [2] Two variables, right and left <br> [3] If the right one is not in set, add it to the set. <br> [3] If the set has it, delete the left one <br> return maxSubstringArray. |
