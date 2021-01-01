@@ -48,4 +48,8 @@ Leetcode Arrays
 | Best Time to Buy and Sell Stock II | https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/ | |
 | Find Peak Element | https://leetcode.com/problems/find-peak-element/ | [1] Find max <br> [2] Return indexOf[max]|
 | Minimum Size Subarray Sum | https://leetcode.com/problems/minimum-size-subarray-sum/ | [1] Iterate through the array <br> [2] Find length when s is reached <br> [3] Return min length |
-| Longest Substring Without Repeating Characters | https://leetcode.com/problems/longest-substring-without-repeating-characters/ | [1] Create a new set <br> [2] Two variables, right and left <br> [3] If the right one is not in set, add it to the set. <br> [3] If the set has it, delete the left one <br> return maxSubstringArray. |
+| Longest Substring Without Repeating Characters | https://leetcode.com/problems/longest-substring-without-repeating-characters/ | [1] Create a new set <br> [2] Two variables, right and left <br> [3] If the right one is not in set, add it to the set. <br> [3] If the set has it, delete the left one <br> return maxSubstringArray. 
+| Valid Parentheses | https://leetcode.com/problems/valid-parentheses/ |[1] Push open brackets into new array <br> [2] If closing bracket is opposite of last element in array, pop it, or return false <br> [3] If array has 0 elements at the end, return true|
+| Search Insert Position | https://leetcode.com/problems/search-insert-position/ |[1] Run through the array <br> [2] Insert using splice, push and unshift |
+| Running Sum of 1d Array | https://leetcode.com/problems/running-sum-of-1d-array/ | [1] Run through the array <br> [2] Add each element and push it into a new array|
+| Decompress Run-Length Encoded List | https://leetcode.com/problems/decompress-run-length-encoded-list/ | [1] Run through the array and pair it <br> [2] Create inner for loop for each pair <br> [3] Return new array by merging using concat() 
