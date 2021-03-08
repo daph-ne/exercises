@@ -2,6 +2,12 @@ import java.util.LinkedList;
 
 public class collections{
     public static void main(String[] args) {
+        collections col = new collections();
+        col.linkedList();
+    }
+    private void linkedList() {
+        System.out.println("LINKED LIST");
+        System.out.println();
         LinkedList<String> fruits = new LinkedList<String>();
         //Ading elements to list
         System.out.println("Add elements to linkedList : name.add()");
